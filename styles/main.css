@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+  color: hsla(0, 0%, 60%, 1);
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.board {
+  box-sizing: content-box;
+  height: 30rem;
+  margin: 5rem auto;
+  width: 30rem;
+}
+
+.board > div {
+  border: 1px solid hsla(240, 50%, 90%, 1);
+  box-sizing: border-box;
+  float: left;
+  font-size: 9rem;
+  font-weight: bold;
+  height: 10rem;
+  line-height: 9rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 10rem;
+}
+
+.board.won > div.x,
+.board.won > div.o {
+  color: hsla(0, 0%, 90%, 1)
+}
+
+.board > div.x,
+.board.won > div.x.win {
+  color: hsla(0, 80%, 50%, 1);
+}
+
+.board > div.o,
+.board.won > div.o.win  {
+  color: hsla(120, 80%, 50%, 1);
+}
+
+.board > div:nth-child(1),
+.board > div:nth-child(2),
+.board > div:nth-child(3) {
+  border-top-color: white;
+}
+
+.board > div:nth-child(3),
+.board > div:nth-child(6),
+.board > div:nth-child(9) {
+  border-right-color: white;
+}
+
+.board > div:nth-child(7),
+.board > div:nth-child(8),
+.board > div:nth-child(9) {
+  border-bottom-color: white;
+}
+
+.board > div:nth-child(1),
+.board > div:nth-child(4),
+.board > div:nth-child(7) {
+  border-left-color: white;
+}

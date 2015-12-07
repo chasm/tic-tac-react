@@ -1,0 +1,46 @@
+{
+  "name": "tic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "packages": "jspm_packages"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.15"
+  },
+  "jspm": {
+    "directories": {
+      "test": "test"
+    },
+    "dependencies": {
+      "babel-preset-es2015": "npm:babel-preset-es2015@^6.3.13",
+      "babel-preset-stage-0": "npm:babel-preset-stage-0@^6.3.13",
+      "chai": "npm:chai@^3.4.1",
+      "chai-immutable": "npm:chai-immutable@^1.5.3",
+      "immutable": "npm:immutable@^3.7.5",
+      "jsx": "npm:jspm-loader-jsx@^0.0.7",
+      "mocha": "npm:mocha@^2.3.4",
+      "ramda": "npm:ramda@^0.18.0",
+      "react": "npm:react@^0.14.3",
+      "react-addons-pure-render-mixin": "npm:react-addons-pure-render-mixin@^0.14.3",
+      "react-addons-test-utils": "npm:react-addons-test-utils@^0.14.3",
+      "react-dom": "npm:react-dom@^0.14.3",
+      "react-redux": "npm:react-redux@^4.0.0",
+      "react-router": "npm:react-router@^1.0.1",
+      "redux": "npm:redux@^3.0.4"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
