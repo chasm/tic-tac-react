@@ -59,7 +59,7 @@ Make sure it defaulted to the Babel transpiler.
 Now we'll install a few things we'll need.
 
 ```sh
-jspm i npm:babel-preset-es2015 npm:babel-preset-es2015 npm:babel-preset-stage-0
+jspm i npm:babel-preset-react npm:babel-preset-es2015 npm:babel-preset-stage-0
 ```
 
 These give us JavaScript 2015+ superpowers.
