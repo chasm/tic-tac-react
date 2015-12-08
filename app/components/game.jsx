@@ -66,7 +66,7 @@ class Game extends Component {
       var s3 = board[pattern[2]]
 
       return s1 && s1 === s2 && s2 === s3
-    }, winPatterns);
+    }, winPatterns)
   }
 
   render () {
@@ -84,19 +84,15 @@ class Game extends Component {
     const inPlay = isEmpty(wins)
 
     return mapIndexed((player, idx) => {
-      return inPlay ?
-        <Square
-          ref={`square${idx}`}
-          key={idx}
-          player={player}
-          clickCb={this.handleClick.bind(this, idx)}
-        /> :
-        <Square
-          ref={`square${idx}`}
-          key={idx}
-          player={player}
-          win={contains(idx, wins)}
-        />
+      if (inPlay) {
+        if (player) {
+          return <Square key={idx} player={player}/>
+        } else {
+          return <Square key={idx} clickCb={this.handleClick.bind(this, idx)}/>
+        }
+      } else {
+        return <Square key={idx} player={player} win={contains(idx, wins)}/>
+      }
     }, board)
   }
 }

@@ -2,12 +2,11 @@ import React from 'react'
 import TestUtils from 'react-addons-test-utils'
 
 import { expect } from 'chai'
+import { forEach } from 'ramda'
 
 import App from '../app/components/app.jsx!'
 import Game from '../app/components/game.jsx!'
 import Square from '../app/components/square.jsx!'
-
-import { forEach } from 'ramda'
 
 const {
   isCompositeComponent,
@@ -99,7 +98,7 @@ describe("Game", () => {
 
   describe("board", () => {
     it("has nine squares", () => {
-      const board = scryRenderedDOMComponentsWithClass(game, 'board')
+      let board = scryRenderedDOMComponentsWithClass(game, 'board')
 
       expect(board[0].childNodes.length).to.equal(9)
     })
