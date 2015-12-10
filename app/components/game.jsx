@@ -60,7 +60,7 @@ class Game extends Component {
   }
 
   checkForWin (board) {
-    return filter(function (pattern) {
+    return filter((pattern) => {
       var s1 = board[pattern[0]]
       var s2 = board[pattern[1]]
       var s3 = board[pattern[2]]
