@@ -1,5 +1,7 @@
 # Tic-Tac-React
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chasm/tic-tac-react.svg)](https://greenkeeper.io/)
+
 Notes for a React/Redux version of tic-tac-toe.
 
 ## Setup
